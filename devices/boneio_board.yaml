@@ -17,15 +17,19 @@ sensor:
     current:
       id: ina_current
       name: "${node_name} INA219 Current"
+      entity_category: diagnostic
     power:
       id: ina_power
       name: "${node_name} INA219 Power"
+      entity_category: diagnostic
     bus_voltage:
       id: ina_bus_voltage
       name: "${node_name} INA219 Bus Voltage"
+      entity_category: diagnostic
     shunt_voltage:
       id: ina_shunt_voltage
       name: "${node_name} INA219 Shunt Voltage"
+      entity_category: diagnostic
     max_voltage: 32.0V
     max_current: 3.2A
     update_interval: 30s
@@ -39,6 +43,7 @@ switch:
       mode:
         output: true
       inverted: false
+
 pcf8574:
   - id: 'pcf_inputs_1to14'
     i2c_id: bus_a

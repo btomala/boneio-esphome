@@ -7,6 +7,7 @@ external_components:
 sensor:
 # Lower board temperature
   - platform: lm75
+    entity_category: diagnostic
     id: boneIO_temp
     name: "${node_name} LM75B Temperature"
     update_interval: 30s
