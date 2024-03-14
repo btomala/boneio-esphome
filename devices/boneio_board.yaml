@@ -2,11 +2,11 @@
 #i2c  address: 0x27 input pcf io
 #i2c  address: 0x40 input ina219 power
 #i2c  address: 0x68 input rtc ds1307
-time:
-  - platform: ds1307
-    id: ds1307_time
-    address: 0x68
-    i2c_id: bus_a
+# time:
+#   - platform: ds1307
+#     id: ds1307_time
+#     address: 0x68
+#     i2c_id: bus_a
 
 sensor:
 # Module power consmption
