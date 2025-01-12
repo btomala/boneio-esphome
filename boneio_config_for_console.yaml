@@ -44,9 +44,9 @@ web_server:
   local: true
 
 time:
-  - platform: homeassistant
+  - platform: sntp
+    id: sntp_time
     timezone: Europe/Warsaw
-    id: homeassistant_time
     # instead try to synchronize via network repeatedly ...
     on_time_sync:
       then:

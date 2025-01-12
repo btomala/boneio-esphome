@@ -103,7 +103,7 @@ display:
         lambda: |-
           it.rectangle(0, 0, 126, 15);
           it.printf(64,11, id(danubeSmall), TextAlign::BASELINE_CENTER, "BoneIO");
-          it.strftime(64, 25, id(dejaVuSmall), TextAlign::BASELINE_CENTER ,"%c", id(homeassistant_time).now());
+          it.strftime(64, 25, id(dejaVuSmall), TextAlign::BASELINE_CENTER ,"%c", id(sntp_time).now());
           it.printf(4, 37, id(dejaVuSmall), TextAlign::BASELINE_LEFT ,"IP addr:");
           it.printf(124, 37, id(dejaVuSmall), TextAlign::BASELINE_RIGHT ,"%s", id(eth).get_ip_addresses()[0].str().c_str());
           it.printf(4, 49, id(dejaVuSmall), TextAlign::BASELINE_LEFT ,"Uptime:");
